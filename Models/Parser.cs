@@ -13,6 +13,7 @@ namespace Task4.Models {
         
         public List<HtmlNode> GetHtml(List<HtmlNode> List,string tag,string attribute,string val,int k)
         {
+            
             return List[k].Descendants(tag)
             .Where(x=>x.GetAttributeValue(attribute,"")
             .Equals(val)).ToList();
