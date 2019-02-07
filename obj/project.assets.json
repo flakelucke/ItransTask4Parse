@@ -12161,11 +12161,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/flake/Desktop/Itrans/Task4/Task4.csproj",
+      "projectUniqueName": "/home/flake/Desktop/Itrans/ItransTask4Parse-master/Task4.csproj",
       "projectName": "Task4",
-      "projectPath": "/home/flake/Desktop/Itrans/Task4/Task4.csproj",
+      "projectPath": "/home/flake/Desktop/Itrans/ItransTask4Parse-master/Task4.csproj",
       "packagesPath": "/home/flake/.nuget/packages/",
-      "outputPath": "/home/flake/Desktop/Itrans/Task4/obj/",
+      "outputPath": "/home/flake/Desktop/Itrans/ItransTask4Parse-master/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

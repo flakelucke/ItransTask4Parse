@@ -65,3 +65,15 @@ body {
   outline: none;
   box-shadow: none;
 }
+.item-flex {
+  border:  none;
+  
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card-item {
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+  align-content: center;
+}

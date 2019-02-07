@@ -11,21 +11,20 @@ using HtmlAgilityPack;
 namespace Task4.Controllers
 {
     public class HomeController : Controller
-    {
+    {   
         public IParser parser;
         public HomeController(IParser parser)
         {
             this.parser = parser;
         }
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {   
-                 
-            return View(await parser.GetStringDoc());
-        }
+            return View();
+        }  
         [HttpPost]
-        // public IActionResult Index(string searchInput) {
-        //     return View(parser.GetStringDoc(searchInput));
-        // }
+        public async Task<IActionResult> Index(string searchInput) {
+            return View(await parser.GetStringDoc(searchInput));
+        }
         public IActionResult Privacy()
         {
             return View();

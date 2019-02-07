@@ -6,7 +6,7 @@
     <br/>
 	<div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8">
-            <form class="card card-sm">
+            <form class="card card-sm" method="post">
                 <div class="card-body row no-gutters align-items-center">
                     <div class="col-auto">
                         <i class="fas fa-search h4 text-body"></i>
@@ -17,7 +17,7 @@
                     </div>
                     <!--end of col-->
                     <div class="col-auto">
-                        <button class="btn btn-sm btn-success" type="submit">Search</button>
+                        <button class="btn btn-sm btn-success" type="submit" asp-controller="Home" asp-action="Index">Search</button>
                     </div>
                     <!--end of col-->
                 </div>
@@ -25,10 +25,16 @@
         </div>
         <!--end of col-->
     </div>
-</div> -->
-<div>
-    @foreach (var item in Model)
-    {
-        <tr>@item.Href</tr>
-    }
 </div>
+@if (@Model!=null)
+{
+    <div class="item-flex d-flex flex-column ">
+        @foreach (var item in Model)
+        {   
+            <div class="card-item d-flex flex-column ">
+                <img src="@item.Img" width="100" height="100"><img>
+                <a href="https://www.chipdip.by/@item.Href">@item.HrefText</a>
+            </div>
+        }
+    </div>
+}
